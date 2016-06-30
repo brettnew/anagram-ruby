@@ -1,4 +1,8 @@
-<h1>Your Initial Word:</h1>
-<h2><%=   %></h2>
-<h1>Your Anagrams:</h1>
-<h2><%=  %></h2>
+<h1>Your Anagrams for <%= @initial_word %></h1>
+<ul>
+<% @word_list.each do |elem| %>
+    <li>
+      <%= elem %>
+    </li>
+<% end %>
+</ul>
